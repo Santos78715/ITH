@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.26/angular-ui-router.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/Chart.min.js"></script> -->
+    <script src="app.js"></script>
+    <script src="index.js"></script>
+    <script src="dashboard.component.js"></script>
+    <script src = "chart.component.js"></script>
+
+</head>
+<body ng-app="app">
+    <div class="container">
+      <div class="sidebar">
+        <ul>
+          <li><a ui-sref = "Hello" ui-sref-active="active">Hello</a></li>
+          <li><a ui-sref="about" ui-sref-active="active">About</a></li>
+        </ul>
+      </div>
+      <div class = "content">
+        <div ui-view = 'formview'> </div>
+        <div ui-view = 'chartview'> </div>
+       
+       
+      </div>
+    </div>
+  </body>
+</html>

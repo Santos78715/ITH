@@ -1,0 +1,31 @@
+<!-- <script>
+    function displayFormData() {
+        var firstName = document.getElementById('firstName').value;
+        var lastName = document.getElementById('lastName').value;
+
+        document.getElementById('displayText').innerHTML = {{ }
+    }
+
+    }
+</script> -->
+<div class='main' ng-app="app">
+    <div>
+        <div>{{first_name  + last_name}}</div>
+        <form>
+            <label style="margin-top: 20px;">First Name</label><br>
+            <input type=text id='firstName' style="margin-top: 10px;" ng-model="first_name">
+            <br>
+            <label style="margin-top: 20px;">Last Name</label><br>
+            <input type="text" id='lastName' style="margin-top: 10px;" ng-model = "last_name">
+            <br>
+    
+            <button type="button" onclick="displayFormData()">Display Data</button>
+    
+            
+    
+        </form>
+    </div>
+
+
+   
+</div>
