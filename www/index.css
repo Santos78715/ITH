@@ -1,26 +1,38 @@
-body{
+body {
     margin: 0;
 }
 
-ul{
-    list-style-type: none;
-    margin: 0px;
-    padding: 0px;
-    height: 100%;
-    background-color: #f1f1f1;
-    position: fixed;
-    overflow: auto;
-    width: 25%;
+.container {
+    display: flex;
+    flex-wrap: wrap; /* Allow container to wrap to a new row on small screens */
 }
 
-li a{
+.sidebar {
+    width: 25%;
+    height: 100%;
+    background-color: aqua;
+}
+
+.content {
+    flex-grow: 1;
+    padding: 10px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #f1f1f1;
+}
+
+li a {
     display: block;
     color: black;
     padding: 8px 16px;
-    text-decoration: none; 
+    text-decoration: none;
 }
 
-li a.active{
+li a.active {
     background-color: #04AA6D;
     color: white;
 }
@@ -28,27 +40,10 @@ li a.active{
 li a:hover:not(.active) {
     background-color: black;
     color: white;
-  }
-
-main{
-    float: right;
-    width: 75%;
-    background-color: antiquewhite;
-    padding: 0 20px;
-    margin-top: 20px;
-    height: 50%;
 }
 
-.container{
-    display: flex;
-}
-
-.sidebar{
-    width: 25%;
-    background-color: aqua;
-}
-
-.content{
-    flex-grow: 1;
-    padding: 10px;
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+    }
 }

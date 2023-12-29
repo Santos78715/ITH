@@ -6,7 +6,8 @@ dashboard.config(function ($stateProvider, $urlRouterProvider){
         url: '/hello',
         views:  {
             'formview':{
-                template: '<homecomponent></homecomponent>'
+                template: '<homecomponent></homecomponent>',
+                controller: ''
                 },
             'chartview':{
                     template: '<chartcomponent></chartcomponent>'
